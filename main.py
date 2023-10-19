@@ -4,7 +4,7 @@
 
 # %%
 import sys
-sys.stdout = open('output.txt','wt')
+sys.stdout = open('output/output.txt','wt')
 print('Initiating...\n')
 
 file_dir = ''
@@ -46,7 +46,7 @@ years = [1960,1970,1980,1990,2000,2010,2020,2023]
 def get_graph(filename):
    B = nx.Graph()
 
-   with open(f'{file_dir}files/{filename}.csv') as file:
+   with open(f'{file_dir}DATA/{filename}.csv') as file:
       header = file.readline().replace('\n', '').split(';')
       authorIndex = header.index('author')
       csv_reader = csv.reader(file, delimiter=';', quotechar='"')
