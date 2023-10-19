@@ -1,0 +1,296 @@
+Initiating...
+
+
+File: out-dblp_article
+Authors: 2200877
+Publications: 3150943
+
+Which is the venue having more publications by year?
+1960: ('J. Symb. Log.', 433)
+1970: ('Commun. ACM', 2501)
+1980: ('Commun. ACM', 3605)
+1990: ('IEEE Trans. Commun.', 4635)
+2000: ('IEEE Trans. Commun.', 7299)
+2010: ('CoRR', 26551)
+2020: ('CoRR', 316665)
+2023: ('CoRR', 505667)
+
+Which is the exact diameter of the biggest CC by year?
+1960: (102, 11)
+1970: (2154, 59)
+1980: (21920, 54)
+1990: (99846, 55)
+2000: (412282, 53)
+2010: (1383891, 48)
+2020: (3874857, 46)
+2023: (4935240, 48)
+
+Who is the author who had the largest number of collaborations by year?
+1960: ('Alan J. Perlis', 7)
+1970: ('Seymour Ginsburg', 25)
+1980: ('Azriel Rosenfeld', 64)
+1990: ('Azriel Rosenfeld', 193)
+2000: ('David J. Evans 0001', 286)
+2010: ('H. Vincent Poor', 515)
+2020: ('H. Vincent Poor', 1428)
+2023: ('H. Vincent Poor', 1862)
+
+__________________________________________________
+
+
+File: out-dblp_book
+Authors: 20809
+Publications: 19909
+
+Which is the venue having more publications by year?
+1960: ('Analog methods - computation and simulation (2. ed.).', 1)
+1970: ('Sampling Techniques', 2)
+1980: ('Psychology of Learning and Motivation', 2)
+1990: ('Sampling Techniques', 2)
+2000: ('Concurrent programming.', 3)
+2010: ('Algebra.', 3)
+2020: ('Software Engineering, Artificial Intelligence, Networking and Parallel/Distributed Computing', 3)
+2023: ('Concurrent programming.', 3)
+
+Which is the exact diameter of the biggest CC by year?
+1960: (4, 3)
+1970: (4, 2)
+1980: (10, 2)
+1990: (76, 2)
+2000: (333, 2)
+2010: (1170, 2)
+2020: (2351, 2)
+2023: (2451, 2)
+
+Who is the author who had the largest number of collaborations by year?
+1960: ('Eduard Stiefel', 1)
+1970: ('Eduard Stiefel', 1)
+1980: ('Jeffrey D. Ullman', 5)
+1990: ('Brian W. Kernighan', 9)
+2000: ('Jeffrey D. Ullman', 14)
+2010: ('Jeffrey D. Ullman', 21)
+2020: ('Gunter Saake', 27)
+2023: ('Gunter Saake', 27)
+
+__________________________________________________
+
+
+File: out-dblp_incollection
+Authors: 81420
+Publications: 69587
+
+Which is the venue having more publications by year?
+1960: None
+1970: ('Psychology of Learning and Motivation', 5)
+1980: ('Statistical Computer Performance Evaluation', 28)
+1990: ('Classification, Pattern Recognition and Reduction of Dimensionality', 42)
+2000: ('Concise Encyclopedia of Modelling & Simulation', 174)
+2010: ('Encyclopedia of Database Systems', 3067)
+2020: ('Encyclopedia of GIS', 3334)
+2023: ('Encyclopedia of GIS', 3334)
+
+Which is the exact diameter of the biggest CC by year?
+1960: (1, 0)
+1970: (3, 2)
+1980: (12, 8)
+1990: (41, 8)
+2000: (345, 23)
+2010: (11232, 76)
+2020: (49241, 66)
+2023: (53570, 66)
+
+Who is the author who had the largest number of collaborations by year?
+1960: (None, 0)
+1970: ('Gordon H. Bower', 1)
+1980: ('Barry H. Margolin', 3)
+1990: ('John Kjaer', 7)
+2000: ('Richard T. Snodgrass', 24)
+2010: ('Richard T. Snodgrass', 61)
+2020: ('Oscar Castillo 0001', 189)
+2023: ('Oscar Castillo 0001', 194)
+
+__________________________________________________
+
+
+File: out-dblp_inproceedings
+Authors: 2130705
+Publications: 3236146
+
+Which is the venue having more publications by year?
+1960: ('ACM National Meeting', 164)
+1970: ('AFIPS Spring Joint Computing Conference', 512)
+1980: ('AFIPS National Computer Conference', 1136)
+1990: ('ICASSP', 6672)
+2000: ('ICASSP', 14089)
+2010: ('ICASSP', 20228)
+2020: ('ICASSP', 35377)
+2023: ('ICASSP', 38966)
+
+Which is the exact diameter of the biggest CC by year?
+1960: (36, 17)
+1970: (113, 17)
+1980: (10594, 53)
+1990: (86433, 58)
+2000: (479996, 49)
+2010: (1900341, 42)
+2020: (4477986, 55)
+2023: (5056809, 49)
+
+Who is the author who had the largest number of collaborations by year?
+1960: ('Jay L. Smith', 4)
+1970: ('Jeffrey D. Ullman', 11)
+1980: ('Jeffrey D. Ullman', 43)
+1990: ('Jeffrey D. Ullman', 68)
+2000: ('Toshio Fukuda', 222)
+2010: ('Thomas S. Huang', 546)
+2020: ('Philip S. Yu', 867)
+2023: ('Philip S. Yu', 984)
+
+__________________________________________________
+
+
+File: out-dblp_mastersthesis
+Authors: 21
+Publications: 21
+
+Which is the venue having more publications by year?
+1960: None
+1970: None
+1980: None
+1990: ('A Prolog Compiler for the PLM.', 1)
+2000: ('Entwurf und Implementierung eines übersetzenden Systems für das intuitionistische logische Programmieren auf der Warren Abstract Machine.', 1)
+2010: ('Portierung des DBLP-Systems auf ein relationales Datenbanksystem und Evaluation der Performance.', 1)
+2020: ('Essence: Machine Learning Approaches to Scalable and Energy Efficient Sense-making for Internet-of-Things (IoT).', 1)
+2023: ('Essence: Machine Learning Approaches to Scalable and Energy Efficient Sense-making for Internet-of-Things (IoT).', 1)
+
+Which is the exact diameter of the biggest CC by year?
+1960: (1, 0)
+1970: (1, 0)
+1980: (1, 0)
+1990: (2, 1)
+2000: (2, 1)
+2010: (2, 1)
+2020: (2, 1)
+2023: (2, 1)
+
+Who is the author who had the largest number of collaborations by year?
+1960: (None, 0)
+1970: (None, 0)
+1980: (None, 0)
+1990: (None, 0)
+2000: (None, 0)
+2010: (None, 0)
+2020: (None, 0)
+2023: (None, 0)
+
+__________________________________________________
+
+
+File: out-dblp_phdthesis
+Authors: 109844
+Publications: 109902
+
+Which is the venue having more publications by year?
+1960: ('1ère thèse: Matrices du second degré et normes générales en analyse numérique linéaire : 2ème thèse: Le théorème de Stone - Weirstrass.', 1)
+1970: ('Integer programming: theory and practice.', 1)
+1980: ('Optimal experiment design for dynamic system identification.', 2)
+1990: ('Recursive definitions of partial functions and their computations.', 2)
+2000: ('Optimal experiment design for dynamic system identification.', 2)
+2010: ("Simulation des conditions de trafic intracellulaire d'un réseau sans fil en milieu industriel par un modèle de propagation composite. (Simulation of the intracellular trafic conditions of a wireless network in an industrial environment with a split model).", 2)
+2020: ('Typsysteme für die Dienstvermittlung in offenen verteilten Systemen.', 2)
+2023: ('Cryptanalysis and design of symmetric primitives.', 2)
+
+Which is the exact diameter of the biggest CC by year?
+1960: (3, 2)
+1970: (3, 2)
+1980: (4, 3)
+1990: (5, 4)
+2000: (5, 4)
+2010: (5, 4)
+2020: (5, 4)
+2023: (5, 3)
+
+Who is the author who had the largest number of collaborations by year?
+1960: (None, 0)
+1970: ('Charles Payan', 1)
+1980: ('Marian Siwek', 1)
+1990: ('Marian Siwek', 1)
+2000: ('Marian Siwek', 1)
+2010: ('Marian Siwek', 1)
+2020: ('Marian Siwek', 1)
+2023: ('Marian Siwek', 1)
+
+__________________________________________________
+
+
+File: out-dblp_proceedings
+Authors: 19
+Publications: 54474
+
+Which is the venue having more publications by year?
+1960: ('Proceedings of the 1952 ACM national meeting (Pittsburgh), ACM 1952, Pittsburgh, Pennsylvania, USA, May 2, 1952', 1)
+1970: ('Third International Conference on Computational Linguistics, COLING 1969, Stockholm, Sweden, September 1-4, 1969', 1)
+1980: ("Proceedings of the 8th International Conference on Computational Linguistics, COLING '80, Tokyo, Japan, September 30 - October 4, 1980", 1)
+1990: ('28th Annual Meeting of the Association for Computational Linguistics, 6-9 June 1990, University of Pittsburgh, Pittsburgh, Pennsylvania, USA, Proceedings.', 1)
+2000: ('Parallel Processing: CONPAR 92 - VAPP V, Second Joint International Conference on Vector and Parallel Processing, Lyon, France, September 1-4, 1992, Proceedings', 1)
+2010: ('Parallel Processing: CONPAR 92 - VAPP V, Second Joint International Conference on Vector and Parallel Processing, Lyon, France, September 1-4, 1992, Proceedings', 1)
+2020: ('Proceedings of the 5', 3)
+2023: ('Proceedings of the 5', 3)
+
+Which is the exact diameter of the biggest CC by year?
+1960: (25, 2)
+1970: (98, 2)
+1980: (504, 2)
+1990: (1898, 2)
+2000: (6773, 2)
+2010: (21776, 2)
+2020: (48755, 2)
+2023: (54468, 2)
+
+Who is the author who had the largest number of collaborations by year?
+1960: (None, 0)
+1970: (None, 0)
+1980: (None, 0)
+1990: (None, 0)
+2000: (None, 0)
+2010: (None, 0)
+2020: ('Teri E. Klein', 1)
+2023: ('Teri E. Klein', 1)
+
+__________________________________________________
+
+
+Merged graphs
+
+Which is the venue having more publications by year?
+1960: ('J. Symb. Log.', 433)
+1970: ('Commun. ACM', 2501)
+1980: ('Commun. ACM', 3605)
+1990: ('ICASSP', 6672)
+2000: ('ICASSP', 14089)
+2010: ('CoRR', 26551)
+2020: ('CoRR', 316665)
+2023: ('CoRR', 505667)
+
+Which is the exact diameter of the biggest CC by year?
+1960: (164, 13)
+1970: (4223, 74)
+1980: (40713, 58)
+1990: (213649, 59)
+2000: (911355, 55)
+2010: (3191557, 53)
+2020: (7892339, 46)
+2023: (9388248, 40)
+
+Who is the author who had the largest number of collaborations by year?
+1960: ('Alan J. Perlis', 10)
+1970: ('Seymour Ginsburg', 31)
+1980: ('Jeffrey D. Ullman', 101)
+1990: ('Azriel Rosenfeld', 208)
+2000: ('Toshio Fukuda', 327)
+2010: ('Thomas S. Huang', 775)
+2020: ('H. Vincent Poor', 2130)
+2023: ('H. Vincent Poor', 2661)
+
+Which is the pair of authors who collaborated the most between themselves?
+('Makoto Takizawa 0001', 'Tomoya Enokido', {'weight': 519})
