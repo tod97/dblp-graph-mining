@@ -21,24 +21,27 @@ graphs = {
    'out-dblp_book': None,
    'out-dblp_incollection': None,
    'out-dblp_inproceedings': None,
-   'out-dblp_phdthesis': None,
    'out-dblp_mastersthesis': None,
+   'out-dblp_phdthesis': None,
    'out-dblp_proceedings': None,
 }
 
 # Define attributes for each type of publication to generate the venue.
 publication_attr = {
-   'out-dblp_article': ['year', 'title', 'pages', 'publisher', 'journal'],
-   'out-dblp_book': ['year', 'title', 'pages', 'publisher', 'title'],
-   'out-dblp_incollection': ['year', 'title', 'pages', 'publisher', 'booktitle'],
-   'out-dblp_inproceedings': ['year', 'title', 'pages', '-', 'booktitle'],
-   'out-dblp_mastersthesis': ['year', 'title', '-', '-', 'title'],
-   'out-dblp_phdthesis': ['year', 'title', 'pages', 'publisher', 'title'],
-   'out-dblp_proceedings': ['year', 'title', 'pages', 'publisher', 'title'],
+   'out-dblp_article': ['year', 'journal'],
+   'out-dblp_book': ['year', 'title'],
+   'out-dblp_incollection': ['year', 'booktitle'],
+   'out-dblp_inproceedings': ['year', 'booktitle'],
+   'out-dblp_mastersthesis': ['year', 'title'],
+   'out-dblp_phdthesis': ['year', 'title'],
+   'out-dblp_proceedings': ['year', 'title'],
 }
 
 # Define the list of years.
 years = [1960,1970,1980,1990,2000,2010,2020,2023]
+
+# Define a dictionary to hold the publications.
+pub_dict = {}
 
 # %%
 # Function to create a graph from a CSV file.
@@ -63,10 +66,11 @@ def get_graph(filename):
             
             publication = ' || '.join([str(attr) for attr in attributes])
 
+            pub_dict[row[0]] = publication
             # Add nodes and edges to the graph for every row.
             B.add_nodes_from(authors, bipartite=0)
-            B.add_nodes_from([publication], bipartite=1)
-            B.add_edges_from([(author, publication) for author in authors])
+            B.add_nodes_from([row[0]], bipartite=1)
+            B.add_edges_from([(author, row[0]) for author in authors])
 
    # Define the position of the nodes in the graph in case of visualization.
    pos = nx.bipartite_layout(B, list({n for n, d in B.nodes(data=True) if d["bipartite"] == 0}))
@@ -76,7 +80,7 @@ def get_graph(filename):
 def get_publications_up_to_year(publications, year):
    filtered_publications = []
    for publication in publications:
-      pub_year = publication.split(' || ')[0]
+      pub_year = pub_dict[publication].split(' || ')[0]
       if pub_year.isdigit() and int(pub_year) <= year:
          filtered_publications.append(publication)
    return filtered_publications
@@ -85,7 +89,7 @@ def get_publications_up_to_year(publications, year):
 def get_publications_after_year(publications, year):
    filtered_publications = []
    for publication in publications:
-      pub_year = publication.split(' || ')[0]
+      pub_year = pub_dict[publication].split(' || ')[0]
       if pub_year.isdigit() and int(pub_year) > year:
          filtered_publications.append(publication)
    return filtered_publications
@@ -93,7 +97,7 @@ def get_publications_after_year(publications, year):
 # Returns the venue with the most publications and the number of publications.
 def get_venue_with_more_publications(publications, year):
    publications = get_publications_up_to_year(publications, year)
-   venues = [publication.split(' || ')[-1].strip() for publication in publications if publication.split(' || ')[-1].strip() != '']
+   venues = [pub_dict[publication].split(' || ')[-1].strip() for publication in publications if publication.split(' || ')[-1].strip() != '']
    if not venues:
       return None
    # Create a series to count the number of publications for each venue.
@@ -238,24 +242,6 @@ question3(merged_graph, authors)
 print("\nWhich is the pair of authors who collaborated the most between themselves?")
 # Which is the pair of authors who collaborated the most between themselves?
 authors_graph = nx.Graph()
-visited_publications = []
-max_edges = 0
-for author in authors:
-   author_publications = [edge[1] for edge in merged_graph.edges(author) if edge[1] not in visited_publications]
-   if len(author_publications) > max_edges:
-      for publication in author_publications:
-         visited_publications.append(publication)
-         collab_authors = [edge[1] for edge in merged_graph.edges(publication)]
-         for i in range(len(collab_authors)):
-            for j in range(i + 1, len(collab_authors)):
-               if authors_graph.has_edge(collab_authors[i], collab_authors[j]):
-                  authors_graph[collab_authors[i]][collab_authors[j]]['weight'] += 1
-               else:
-                  authors_graph.add_edge(collab_authors[i], collab_authors[j], weight=1)
-
-               max_edges = max(max_edges, authors_graph[collab_authors[i]][collab_authors[j]]['weight'])
-
-""" FIRST SOLUTION
 for publication in publications:
    authors = [edge[1] for edge in merged_graph.edges(publication)]
    for i in range(len(authors)):
@@ -264,7 +250,6 @@ for publication in publications:
             authors_graph[authors[i]][authors[j]]['weight'] += 1
          else:
             authors_graph.add_edge(authors[i], authors[j], weight=1)
-"""
    
 # Get edges sorted by weight
 sorted_edges = sorted(authors_graph.edges(data=True), key=lambda x: x[2]['weight'], reverse=True)
